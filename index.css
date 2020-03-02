@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds|Yeon+Sung&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:#121212;
+}
+header {
+    text-align: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+
+/* Setting up the logo */
+/* =========================================================== */
+.logo {
+    padding: 1em 0;
+    font-family: 'Trade Winds';
+    background-color: #4c3c3c;
+    color: blanchedalmond;
+}
+/* ----------------------------------------------------------- */
+
+
+
+/* Setting up the nav bar */
+/* =========================================================== */
+.nav {
+    font-family: 'Yeon Sung';
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    padding: 1em 0;
+    background-color: #4c3c3c;
+}
+.nav > ul{
+    list-style: none;
+    background-color: #4c3c3c;
+}
+.nav > ul > li {
+    display: inline-block;
+    margin: 0 3em;
+    background-color: #4c3c3c;
+}
+.nav > ul > li > a {
+    text-decoration: none;
+    color: burlywood;
+    transition: 1.5s;
+    background-color: #4c3c3c;
+}
+.nav > ul > li > a:hover {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+/* ----------------------------------------------------------- */
+
+
+
+/* Setting up the tool tip's pop out window */
+/* =========================================================== */
+.nav > ul > li > p {
+    /* Setting up the pop up window position */
+    position: absolute;
+    top: 18em;
+    left:0;
+    transform: translate(-50%,-50%);
+    /* Setting up the pop up window's shape */
+    background-color: #43464b;
+    width: 50%;
+    height: 50%;
+    line-height: 500%;
+    border-radius: 8px;
+    /* Setting up the pop up window's text*/
+    color: whitesmoke;
+    font-size: 0.8em;
+    /* This is the most important part for tool tips skill */
+    opacity: 0;
+    transition: 1.5s;
+}
+/* ----------------------------------------------------------- */
+
+
+
+/* Hovering around the link, and let the pop out window appear */
+/* =========================================================== */
+.nav > ul > li:hover p {
+    opacity: 0.6;
+    left:50%;
+}
+/* ----------------------------------------------------------- */
+
+
+
+/* This part is about setting the main content*/
+/* =========================================================== */
+.landscape_picture{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.landscape_picture img {
+    margin: 30px 30px;
+    border-radius: 10px;
+}
+/* ----------------------------------------------------------- */
